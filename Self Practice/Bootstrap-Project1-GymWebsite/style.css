@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.navbar {
+	color: #ffffff;
+	background-color: #000;
+}
+.navbar-brand {
+	color: #ffffff;
+	font-family: "Dancing Script", cursive;
+}
+.navbar-brand:hover {
+	color: #fff;
+}
+.navbar-toggler-icon {
+	/* background-color: #ec5353; */
+}
+span {
+	color: #ec5353;
+	cursor: pointer;
+}
+.nav-item {
+	padding-right: 50px;
+}
+.nav-link {
+	color: #fff;
+	text-transform: uppercase;
+	font-family: sans-serif, "Courier New", Courier, monospace;
+}
+.nav-link:hover {
+	color: #ec5353;
+}
+.nav-link:active {
+	color: #fff;
+}
+.d-flex {
+	color: #ec5353;
+	cursor: pointer;
+	font-family: "Dancing Script", cursive;
+}
+/* -------------------MAIN---------------------------- */
+.main {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("./-img/young-fitness-man-studio.jpg") no-repeat;
+	background-size: cover;
+	height: 110vh;
+}
+.main p {
+	font-size: 1.3rem;
+}
+.main h1 {
+	font-size: 5rem;
+	font-weight: 800;
+}
+.btn1 {
+	color: #fff;
+	border: none;
+	outline: none;
+	padding: 1rem 2rem;
+	background: linear-gradient(90deg, #f5634b, #fe9418);
+	transition: 1s;
+}
+.btn1:hover {
+	background: linear-gradient(90deg, #fe9418, #f5634b);
+	transition: 1s;
+}
+
+/* -------------------FEATURES---------------------------- */
+.features {
+	margin-top: -44px;
+}
+.features h4 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.features a {
+	text-decoration: none;
+	color: #ec5353;
+}
+.back:hover {
+	color: #fff;
+	cursor: pointer;
+}
+.back {
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+	transition: all 0.8s;
+}
+.back::before {
+	content: "";
+	position: absolute;
+	height: 0;
+	width: 0;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, #fe9418, #f5634b);
+	transition: all 0.8s;
+	z-index: -1;
+}
+.back:hover::before {
+	height: 100%;
+	width: 100%;
+}
+.back:hover a {
+	color: #fff;
+	transition: all 0.8s;
+}
+.card-body {
+	height: 170px;
+}
+/* <!-- --------------------------------MORE FEATURES------------------------------------- --> */
+.more-features h2 {
+	font-weight: 800;
+}
+.more-features p {
+	font-weight: lighter;
+}
+p {
+	font-size: 1.1rem;
+}
+/* <!-- --------------------------------DISCOVER------------------------------------- --> */
+.discover {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("./-img/water.jpg") no-repeat;
+	background-size: cover;
+	background-position: top;
+	width: 100%;
+	height: 100vh;
+}
+.discover h2 {
+	font-size: 2.8rem;
+	font-weight: 800;
+}
+
+/* <!-- --------------------------------SERVICES------------------------------------- --> */
+
+.services {
+	height: 100vh;
+}
+.services h3 {
+	font-size: 2.8rem;
+	font-weight: 800;
+	color: #ec5353;
+}
+.services h4 {
+	font-weight: 700;
+}
