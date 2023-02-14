@@ -1,0 +1,153 @@
+/* -------------------------------------------------TABLET*/
+
+@media only screen and (min-width: 700px) {
+	.cards .card {
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+	}
+	.cards .card p {
+		margin-left: 3rem;
+	}
+	/* ----------------CREATOR---------------------- */
+	.creator-card {
+		top: 14rem;
+	}
+	.creator-card img {
+		width: 20rem;
+		top: -8rem;
+	}
+	.creator-card h3 {
+		margin-top: -7rem;
+		font-size: 5.7rem;
+	}
+	.creator-card h4 {
+		font-size: 2.8rem;
+		color: var(--orange-color);
+	}
+	.creator-card p {
+		color: #111111;
+		font-size: 2rem;
+		letter-spacing: 0.1rem;
+		margin: 3rem 7rem 7rem 7rem;
+	}
+}
+
+/* -------------------------------------------------LAPTOP*/
+
+@media only screen and (min-width: 1065px) {
+	.header-page {
+		height: 90vh;
+	}
+	.header-page .cards {
+		justify-content: center;
+		padding-top: 10rem;
+		flex-wrap: wrap;
+	}
+	.cards .card {
+		margin: 3rem;
+	}
+	.cards .card p {
+		font-size: 1.7rem;
+	}
+
+	/* ----------------CREATOR---------------------- */
+	.creator-card {
+		top: 25rem;
+	}
+	.creator-card img {
+		width: 25rem;
+		top: -13rem;
+	}
+	.creator-card {
+		width: 70vw;
+	}
+
+	.creator-card h3 {
+		margin-top: -12rem;
+		font-size: 6.3rem;
+	}
+	.creator-card h4 {
+		font-size: 3rem;
+		color: var(--orange-color);
+	}
+	.creator-card p {
+		color: #111111;
+		font-size: 2.5rem;
+		letter-spacing: 0.1rem;
+		margin: 3rem 10rem 7rem 10rem;
+	}
+	.freeSpace {
+		height: 45rem;
+	}
+	/* ----------------FIRST--PAGE---------------------- */
+	.first--page h2 {
+		margin-top: 10rem;
+		font-size: 5.6rem;
+	}
+	.first--page p {
+		font-size: 2.6rem;
+
+		padding: 0 10rem;
+		margin-top: 7rem;
+	}
+	.hyperlinks .circle {
+		width: 20rem;
+		font-size: 2.5rem;
+		margin: 3rem;
+	}
+	/* ----------------SECOND--PAGE---------------------- */
+	.second--page {
+		color: var(--white-color);
+		min-height: 100vh;
+		width: 80%;
+	}
+
+	.second--page h3 {
+		font-size: 7rem;
+	}
+	.second--page p {
+		font-size: 2rem;
+		margin: 2rem 22rem 5rem;
+	}
+
+	.second--page .box---cards {
+		justify-content: center;
+		width: 100vw;
+	}
+	.box---cards .card {
+		margin: 2rem 2rem;
+		height: 35rem;
+		max-width: 28rem;
+		transition: 0.7s ease;
+	}
+
+	.card h3 {
+		font-size: 2.3rem;
+	}
+	/* ----------------THIRD--PAGE---------------------- */
+
+	.third--page h3 {
+		font-size: 7rem;
+	}
+	.testimonial-grid {
+		max-width: 70vw;
+		margin: 10rem auto 0;
+	}
+	.testimonial-grid .grid-card {
+		max-width: 38rem;
+	}
+	.testimonial-grid img {
+		width: 12rem;
+	}
+	.grid-card .grid-text {
+		margin-left: 2rem;
+		font-size: 1.6rem;
+	}
+	.grid-card .grid-text p {
+		font-weight: 500;
+	}
+	.grid-card .grid-text h6 {
+		font-size: 1.6rem;
+	}
+}
