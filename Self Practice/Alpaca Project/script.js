@@ -271,12 +271,9 @@ const accessoriesBtn = document.querySelector(".accessories-btn");
 const bgBtn = document.querySelector(".bg-btn");
 
 const primaryButtons = document.querySelectorAll(".p-btn");
-const styleButtons = document.querySelectorAll(".s-btn");
-console.log(styleButtons);
 
-const parentStyleButtons = document.querySelector(".style--buttons");
-
-const styleArr = [];
+let parentStyleButtons = document.querySelector(".style--buttons");
+let styleButtons = parentStyleButtons.childNodes;
 
 // ----------------ARRAY OF CLASSES------------------------------->
 // const classArr = [
@@ -290,21 +287,8 @@ const styleArr = [];
 // 	"bg-btn",
 // ];
 // ----------------ONLOAD------------------------------->
-window.onload = updateStyle;
-// ----------------EVENTLISTENERS------------------------------->
+window.onload = updateStyle("hair-btn");
 
-// primary-btn
-primaryButtons.forEach(btn => {
-	btn.addEventListener("click", () => {
-		removeActiveClass(primaryButtons);
-		btn.classList.add("round-active");
-		updateStyle();
-	});
-});
-// style-btn
-styleArr.forEach(btn => {
-	btn.addEventListener("click", () => {});
-});
 // --------------------FUNCTIONS--------------------------------->
 
 // ACTIVE CLASS REMOVER
@@ -315,50 +299,64 @@ function removeActiveClass(btns) {
 }
 
 // UPDATE STYLE BTNS
-function updateStyle() {
-	primaryButtons.forEach(btn => {
-		if (btn.classList.contains("round-active")) {
-			// console.log(btn.classList[2]);
-			switch (btn.classList[2]) {
-				case "hair-btn":
-					updateStyleButtons(hair);
-					break;
-				case "ears-btn":
-					updateStyleButtons(ears);
-					break;
-				case "eyes-btn":
-					updateStyleButtons(eyes);
-					break;
-				case "mouth-btn":
-					updateStyleButtons(mouth);
-					break;
-				case "neck-btn":
-					updateStyleButtons(neck);
-					break;
-				case "leg-btn":
-					updateStyleButtons(leg);
-					break;
-				case "accessories-btn":
-					updateStyleButtons(accessories);
-					break;
-				case "bg-btn":
-					updateStyleButtons(backgrounds);
-					break;
-			}
-		}
-	});
-}
-function updateStyleButtons(arrayName) {
-	parentStyleButtons.innerHTML = "";
-
-	styleArr.length = 0;
-	for (let i = 0; i < arrayName.length; i++) {
-		let newButton = document.createElement("button");
-		newButton.classList.add("btn-round", "s-btn"); //, "round-active"
-		newButton.innerText = arrayName[i].name;
-
-		styleArr.push(newButton);
-
-		parentStyleButtons.append(newButton);
+function updateStyle(btnClass) {
+	switch (btnClass) {
+		case "hair-btn":
+			updateStyleButtons(hair);
+			break;
+		case "ears-btn":
+			updateStyleButtons(ears);
+			break;
+		case "eyes-btn":
+			updateStyleButtons(eyes);
+			break;
+		case "mouth-btn":
+			updateStyleButtons(mouth);
+			break;
+		case "neck-btn":
+			updateStyleButtons(neck);
+			break;
+		case "leg-btn":
+			updateStyleButtons(leg);
+			break;
+		case "accessories-btn":
+			updateStyleButtons(accessories);
+			break;
+		case "bg-btn":
+			updateStyleButtons(backgrounds);
+			break;
 	}
 }
+
+function updateStyleButtons(arrayName) {
+	parentStyleButtons.innerHTML = ""; //error
+	for (let i = 0; i < arrayName.length; i++) {
+		const newButton = document.createElement("button");
+		newButton.classList.add("btn-round", "s-btn"); //, "round-active"
+		newButton.innerText = arrayName[i].name;
+		parentStyleButtons.appendChild(newButton);
+	}
+	styleButtons = parentStyleButtons.childNodes;
+	console.log(styleButtons);
+	// console.log(parentStyleButtons);  problem here
+}
+
+// ----------------EVENTLISTENERS------------------------------->
+
+// primary-btn
+primaryButtons.forEach(btn => {
+	btn.addEventListener("click", () => {
+		updateStyle(btn.classList[2]);
+		removeActiveClass(primaryButtons);
+		btn.classList.add("round-active");
+		1;
+	});
+});
+
+// style-btn
+styleButtons.forEach(btn => {
+	btn.addEventListener("click", () => {
+		removeActiveClass(styleButtons);
+		btn.classList.add("round-active");
+	});
+});

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-weight: 600;
+	outline: 0;
+	border: 0;
+	scroll-behavior: smooth;
+}
+html {
+	font-size: 62.5%;
+	/* font-family: "Oswald", sans-serif; */
+	font-family: "Poppins", sans-serif;
+	overflow-x: hidden;
+}
+body {
+	background-color: var(--dark-color);
+	color: var(--white-color);
+}
+:root {
+	--dark-color: #292d33;
+	--it-color: #3b383f;
+	--light-grey-color: #bbbbbb;
+	--orange-color: #f65921;
+	--light-orange-color: #f06e49;
+	--white-color: #ffffff;
+	--tan-color: #e9cfc5;
+	--footer-btn-color: #b16853;
+}
+
+/* ---------------GLOBAL----------------------- */
+.flex-row {
+	display: flex;
+}
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ---------------HEADER----------------------- */
+
+nav {
+	height: 10vh;
+	color: var(--white-color);
+	justify-content: space-between;
+	align-items: center;
+}
+nav :is(h1, i) {
+	font-size: 3rem;
+	margin: 0 5%;
+	cursor: pointer;
+}
+nav h1 {
+	color: var(--light-grey-color);
+	font-size: 4rem;
+}
+nav i:hover {
+	color: var(--orange-color);
+}
+.header-page {
+	background: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/3ab515973cd65e0da7578c30/-min.jpg");
+	background-position: 50% 50%;
+	min-height: 90vh;
+}
+.header-page .cards {
+	/* position: absolute; */
+	text-align: left;
+	height: 70vh;
+	width: 90vw;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.header-page .card {
+	width: 30rem;
+	height: 16rem;
+	background: var(--orange-color);
+	margin: 1rem;
+	border-radius: 2rem;
+	color: var(--white-color);
+	/* inset: 0 auto auto 0; */
+}
+.cards .card {
+	flex-wrap: wrap;
+	justify-content: start;
+	align-content: start;
+	padding: 0 3rem;
+}
+.cards .card p {
+	margin: 0 0 0 3rem;
+	font-size: 1.7rem;
+}
