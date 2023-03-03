@@ -31,6 +31,63 @@
 		letter-spacing: 0.1rem;
 		margin: 3rem 7rem 7rem 7rem;
 	}
+	/* -----TESTIMONIALS */
+	.third--page h3 {
+		font-size: 5rem;
+	}
+	.testimonial-grid {
+		width: 100vw;
+		/* margin: auto; */
+	}
+	.testimonial-grid .grid-card {
+		max-width: 30rem;
+	}
+	.grid-card .grid-text {
+		margin-left: 1rem;
+	}
+	.grid-card .grid-text p {
+		font-weight: 500;
+	}
+	.grid-card .grid-text h6 {
+		font-size: 1.4rem;
+	}
+	/* -----MOUNTAINS----- */
+	.mountain {
+		flex-direction: row;
+		height: 45vh;
+		color: var(--white-color);
+		text-align: center;
+		background-image: linear-gradient(
+				0deg,
+				rgba(0, 0, 0, 0.45),
+				rgba(0, 0, 0, 0.45)
+			),
+			url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/722aa5216d3c5059a0a299de/fgfggf-min.jpg");
+		background-position: 50% 50%;
+	}
+	.mount-text {
+		flex-direction: row;
+		margin: auto;
+	}
+	.card-strip {
+		justify-content: center;
+		align-items: center;
+		margin: 3rem;
+	}
+	.card-strip h4 {
+		font-size: 4.5rem;
+	}
+	.card-strip h2 {
+		font-size: 2rem;
+		font-weight: 200;
+	}
+	/* ----------------IT-SOL------------- */
+	.it-sol-text h2 {
+		font-size: 4rem;
+	}
+	.it-sol-text ul li {
+		font-size: 1.8rem;
+	}
 }
 
 /* -------------------------------------------------LAPTOP*/
@@ -131,11 +188,11 @@
 		font-size: 7rem;
 	}
 	.testimonial-grid {
-		max-width: 70vw;
-		margin: 10rem auto 0;
+		width: 85vw;
+		margin: auto;
 	}
 	.testimonial-grid .grid-card {
-		max-width: 38rem;
+		max-width: 42rem;
 	}
 	.testimonial-grid img {
 		width: 12rem;
@@ -149,5 +206,155 @@
 	}
 	.grid-card .grid-text h6 {
 		font-size: 1.6rem;
+	}
+	/* ----------------IT-SOL------------- */
+	.it-sol {
+		flex-direction: row;
+		background-color: var(--it-color);
+	}
+	.it-sol-img {
+		width: 60%;
+	}
+	.it-sol-text {
+		justify-content: center;
+		width: 40%;
+	}
+	.it-sol-img img {
+		width: 100%;
+	}
+	.it-sol-text h2 {
+		font-size: 5rem;
+		margin-bottom: 5rem;
+	}
+	.it-sol-text ul li {
+		margin: 1rem 0;
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	.it-sol-text ul li i {
+		color: var(--orange-color);
+		margin-right: 1rem;
+	}
+	.contact-me-btn {
+		background-color: var(--orange-color);
+		color: var(--white-color);
+		padding: 2rem 6rem;
+		margin-top: 2rem;
+		border-radius: 3rem;
+		font-size: 2rem;
+		max-width: 35rem;
+		transition: 0.3s ease-in-out;
+	}
+	.contact-me-btn:hover {
+		background-color: var(--white-color);
+		color: #000;
+	}
+
+	/* --------EXPERTISE-------------- */
+
+	.expertise-container {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		/* height: 100vh; */
+	}
+	.expertise-container .expertise-left {
+		justify-content: center;
+		align-items: start;
+		flex: 1;
+	}
+	.expertise-left h3 {
+		font-size: 5rem;
+	}
+	.expertise-left p {
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	.expertise-left h4 {
+		font-size: 2.6rem;
+	}
+	.expertise-left .companies {
+		flex-direction: row;
+		justify-content: left;
+	}
+	.expertise-container .expertise-right {
+		background-color: transparent;
+		flex: 1;
+		margin-left: 5rem;
+		margin-bottom: 0rem;
+	}
+	.expertise-btn {
+		margin-top: 1rem;
+		max-width: 30rem;
+		width: 100%;
+		padding: 2.2rem 3rem;
+		font-size: 2rem;
+	}
+
+	/* --grid-- */
+	.expertise-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		background-color: #fff;
+		place-items: center;
+	}
+	.expertise-grid .comp-grid-img {
+		width: 100%;
+	}
+	.expertise-grid .comp-grid-img:nth-child(1),
+	.expertise-grid .comp-grid-img:nth-child(4) {
+		width: 100%;
+		height: 100%;
+		background-color: var(--white-color);
+		object-fit: cover;
+		object-position: center;
+	}
+	.expertise-grid .comp-grid-img:nth-child(2),
+	.expertise-grid .comp-grid-img:nth-child(3) {
+		padding: 0 3rem;
+	}
+	/* <!----------------CONTACT-ME-SECTION-------------> */
+
+	.contact-me-section-container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	/* ---------info-card-------- */
+	.contact-info-card {
+		margin: 0rem 0;
+		width: 50%;
+	}
+	.contact-info-card h2 {
+		font-size: 2.6rem;
+	}
+	.contact-info-card .timing-head {
+		font-size: 4rem;
+		line-height: 4rem;
+	}
+	.contact-info-card .timings {
+		font-size: 2rem;
+	}
+	.contact-info-card .contact-email-link {
+		font-size: 2rem;
+	}
+	.contact-info-card h3 {
+		margin-top: 3rem;
+	}
+
+	/* ---------form-------- */
+	.contact-me-form {
+		width: 50%;
+	}
+	.contact-me-form h2 {
+		font-size: 6rem;
+	}
+	.contact-me-form :is(textarea, input) {
+		max-width: 50rem;
+		resize: vertical;
+	}
+	.contact-me-form button {
+		max-width: 50rem;
 	}
 }

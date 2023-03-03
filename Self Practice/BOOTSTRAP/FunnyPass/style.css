@@ -1,0 +1,38 @@
+.container {
+	min-height: 100vh;
+}
+.password {
+	height: 50vh;
+	position: relative;
+}
+#submit {
+	transform: translateX();
+	transition: 0.1s ease-out;
+	position: absolute;
+	top: 145px;
+	left: 10px;
+	/* transform: translate(-50%, -50%); */
+}
+#submit:active {
+	transform: scale(0.95);
+}
+.form-control,
+.form-control:active,
+.form-control:focus {
+	border: none;
+	box-shadow: none;
+}
+.password-icon {
+	display: flex;
+	align-items: center;
+	border: 2px solid rgb(187, 187, 187);
+	border-radius: 6px;
+}
+.password-icon i {
+	font-size: 1.3rem;
+	margin: 0 1rem;
+	cursor: pointer;
+}
+.password-icon i:active {
+	transform: scale(0.9);
+}

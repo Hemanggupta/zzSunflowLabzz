@@ -14,22 +14,32 @@
 			referrerpolicy="no-referrer" />
 
 		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="tablet-media.css" />
 		<link rel="stylesheet" href="laptop-media.css" />
+
+		<script src="./app.js" defer></script>
 	</head>
 	<body>
-		<header>
+		<header id="top">
 			<nav class="flex-row">
 				<h1>logo</h1>
 				<i class="fa-solid fa-bars nav-btn"></i>
+
+				<!-- ----BURGER-NAV------- -->
+				<div class="burger-nav flex-col">
+					<i class="fa-solid fa-xmark close-btn"></i>
+					<div class="links flex-col">
+						<a href="#creator">About</a>
+						<a href="#portfolio">Portfolio</a>
+						<a href="#testimonials">Testimonials</a>
+						<a href="#skills">Skills</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</div>
 			</nav>
-			<div class="header-page" data-aos="zoom-in" data-aos-duration="1500">
-				<div class="cards flex-row" data-aos="fade-up" data-aos-duration="2000">
+			<div class="header-page">
+				<div class="cards flex-row">
 					<div class="card flex-col">
-						<i
-							class="fa-solid fa-location-dot fa-4x"
-							data-aos="img-spin"
-							data-aos-duration="2000"></i>
+						<i class="fa-solid fa-location-dot fa-4x"></i>
 						<p>
 							121 Rock Sreet,
 							<br />
@@ -37,10 +47,7 @@
 						</p>
 					</div>
 					<div class="card flex-col">
-						<i
-							class="fa-solid fa-phone-volume fa-4x"
-							data-aos="img-spin"
-							data-aos-duration="2000"></i>
+						<i class="fa-solid fa-phone-volume fa-4x"></i>
 						<p>
 							<u>9974770450</u>
 							<br />
@@ -48,10 +55,7 @@
 						</p>
 					</div>
 					<div class="card flex-col">
-						<i
-							class="fa-solid fa-comments fa-4x"
-							data-aos="img-spin"
-							data-aos-duration="2000"></i>
+						<i class="fa-solid fa-comments fa-4x"></i>
 						<p>
 							<u>contact@nicepage.com</u>
 							<br />
@@ -59,10 +63,7 @@
 						</p>
 					</div>
 				</div>
-				<div
-					class="creator-card flex-col"
-					data-aos="fade-up"
-					data-aos-duration="1000">
+				<div class="creator-card flex-col">
 					<img
 						src="	https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/42e00f44576258d48183655f/jhjh5.jpg"
 						alt="self-img" />
@@ -74,10 +75,15 @@
 					</p>
 				</div>
 			</div>
+			<div class="top-arrow">
+				<i class="fa-solid fa-caret-up"></i>
+			</div>
 			<div class="freeSpace"></div>
 		</header>
+		<!-- ------------RESUME------------ -->
 		<section class="resume">
-			<div class="first--page flex-col">
+			<!-- ------------Kalvin-Piterson------------ -->
+			<div id="creator" class="first--page flex-col">
 				<h2>Kalvin Piterson</h2>
 				<p>
 					I’m a digital designer in love with photography, painting and
@@ -86,13 +92,14 @@
 					consequat. Duis aute irure dolor.
 				</p>
 				<div class="hyperlinks flex-row">
-					<div class="circle flex-row">RESUME</div>
-					<div class="circle flex-row">MY SKILLS</div>
-					<div class="circle flex-row">PROJECTS</div>
-					<div class="circle flex-row">CONTACT</div>
+					<a class="circle flex-row" href="#portfolio">MY PORTFOLIO</a>
+					<a class="circle flex-row" href="#testimonials">TESTIMONIALS</a>
+					<a class="circle flex-row" href="#skills">SKILLS</a>
+					<a class="circle flex-row" href="#contact">CONTACT</a>
 				</div>
 			</div>
-			<div class="second--page flex-col">
+			<!-- ------------Portfolio------------ -->
+			<div id="portfolio" class="second--page flex-col">
 				<h3>My Portfolio</h3>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -137,9 +144,8 @@
 					</div>
 				</div>
 			</div>
-			<!-- ------------TESTIMONIAL------------ -->
-
-			<div class="third--page flex-col">
+			<!-- ------------Testimonials------------ -->
+			<div id="testimonials" class="third--page flex-col">
 				<h3>Testimonials</h3>
 				<div class="testimonial-grid flex-row">
 					<div class="grid-card flex-row">
@@ -238,6 +244,157 @@
 							<h6>STELLA LARSON</h6>
 						</div>
 					</div>
+				</div>
+			</div>
+			<!-- ------------Mountains------------ -->
+			<div class="mountain flex-col">
+				<div class="mount-text flex-col">
+					<div
+						class="card-strip flex-col"
+						data-aos="zoom-in-up"
+						data-aos-duration="1500">
+						<h4>3</h4>
+						<h2>Coder Degrees</h2>
+					</div>
+					<div
+						class="card-strip flex-col"
+						data-aos="zoom-in-up"
+						data-aos-duration="1500">
+						<h4>25</h4>
+						<h2>Project Completed</h2>
+					</div>
+					<div
+						class="card-strip flex-col"
+						data-aos="zoom-in-up"
+						data-aos-duration="1500">
+						<h4>100</h4>
+						<h2>Satisfied Clients</h2>
+					</div>
+					<div
+						class="card-strip flex-col"
+						data-aos="zoom-in-up"
+						data-aos-duration="1500">
+						<h4>4k</h4>
+						<h2>Coffee Cups</h2>
+					</div>
+				</div>
+			</div>
+			<!-- ------------IT-Solution------------ -->
+			<div class="it-sol flex-col">
+				<div class="it-sol-img">
+					<img
+						src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/42f7a2ee20d45a1eb4ad5eb1/fgfggggg.jpg"
+						alt="man-img" />
+				</div>
+				<div class="it-sol-text flex-col">
+					<h2>IT Solution Strategy Development</h2>
+					<ul>
+						<li>
+							<i class="fa-solid fa-play"></i>
+							Duis aute irure dolor
+						</li>
+						<li>
+							<i class="fa-solid fa-play"></i>
+							Ut enim ad minim
+						</li>
+					</ul>
+					<button class="contact-me-btn" type="button">CONTACT ME</button>
+				</div>
+			</div>
+			<!----------------EXPERTISE----------------->
+			<div id="skills" class="expertise-container flex-col">
+				<div class="expertise-left flex-col">
+					<h3>My Experties</h3>
+					<p>
+						Placerat orci nulla pellentesque dignissim enim sit. Cursus turpis
+						massa tincidunt dui ut ornare lectus. Ultrices mi tempus imperdiet
+						nulla malesuada pellentesque elit eget gravida.
+					</p>
+					<h4>COMPANIES THAT USE MY WORKS:</h4>
+					<div class="companies flex-col">
+						<img
+							src="	https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/efde1b9a3ebd522fab3e8827/logo-amazon.svg"
+							alt="AMAZON" />
+						<img
+							src="	https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/d31506595cff5d9f89d800f7/1.svg"
+							alt="BINANCE" />
+						<img
+							src="	https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/16dceaaca47153d9b01ce7f6/evga.svg"
+							alt="EVGA" />
+						<img
+							src="	https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/b88bf2b6798c5483a79b3bc6/tesla-9.svg"
+							alt="TESLA" />
+						<img
+							src="	https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/fd4ece42119f51ca87c2bbeb/sony-logo.svg"
+							alt="SONY" />
+					</div>
+					<button class="expertise-btn" type="button">CONTACT ME</button>
+				</div>
+				<!-- ------------RIGHT-GRID------------ -->
+				<div class="expertise-right">
+					<div class="expertise-grid">
+						<img
+							class="comp-grid-img"
+							src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/e2e39f17cead5a36875282db/fgfg.jpg"
+							alt="grid-img-1" />
+						<img
+							data-aos="zoom-in"
+							data-aos-duration="2500"
+							class="comp-grid-img"
+							src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/9494497afaee57bb8664499a/6677.jpg"
+							alt="grid-img-2" />
+						<img
+							class="comp-grid-img"
+							src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/fe37bff253c75c9baa6e6a46/hg5.jpg"
+							alt="grid-img-3" />
+						<img
+							class="comp-grid-img"
+							src="	https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/f10e8c5f2cb85dd5a19cb472/hh5.jpg"
+							alt="grid-img-4" />
+					</div>
+				</div>
+			</div>
+			<div class="empty"></div>
+			<!----------------CONTACT-ME-SECTION------------->
+
+			<div class="contact-me-section-container" id="contact">
+				<div class="contact-info-card flex-col">
+					<h2>JOIN OUR NEWSLETTER</h2>
+					<p class="timing-head">
+						Nam ultrices ultrices nec tortor pulvinar esteras loremips est orem.
+					</p>
+					<p class="timings">
+						3045 10 Sunrize Avenue, 123-456-7890
+						<br />
+						Mon – Fri: 9:00 am – 8:00 pm,
+						<br />
+						Sat – Sun: 9:00 am – 10 pm
+					</p>
+					<p class="contact-email-link">
+						<u>contact@nicepage.com</u>
+						<br />
+						<u>info@nicepage.com</u>
+					</p>
+					<h3>Follow us</h3>
+					<div class="social-icons flex-row">
+						<i class="fa-brands fa-facebook-f"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-instagram"></i>
+						<i class="fa-brands fa-linkedin-in"></i>
+						<i class="fa-brands fa-pinterest-p"></i>
+					</div>
+					<h6>©2023 Privacy policy</h6>
+				</div>
+				<div class="contact-me-form flex-col">
+					<h2>Contact Me</h2>
+					<input type="text" placeholder="Enter Your Name" />
+					<input type="email" placeholder="Enter a valid email address" />
+					<textarea
+						name="message"
+						cols="30"
+						rows="5"
+						placeholder="Enter your message"></textarea>
+					<button type="button">SUBMIT</button>
 				</div>
 			</div>
 		</section>
