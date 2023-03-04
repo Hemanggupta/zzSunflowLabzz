@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+	font-family: "Nunito", cursive;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+	/* transition: 0.4s ease-in-out; */
+}
+p {
+	color: #7a7a7a;
+	font-weight: 600;
+	/* transition: 0.4s ease-in-out; */
+}
+.value-card:hover,
+.numbers-content,
+.feature-card,
+.service-card,
+.price-card {
+	box-shadow: var(--shadow);
+}
+
+:root {
+	--main-bg: #4154f1;
+	--main-light-bg: #fafbff;
+	--white-bg: #f6f9ff;
+	--check-bg: #ecf3ff;
+	--main-text: #012970;
+	--main-text-light: #6171f3;
+	--text-light1: #4b4b4b;
+	--text-disabled: #cccccc;
+	--orange-bg: #f68c09;
+	--blue-bg: #2db6fa;
+	--green-bg: #08da4e;
+	--red-bg: #e9222c;
+	--purple-bg: #b50edf;
+	--pink-bg: #f51f9c;
+	--shadow: 0px 0 30px rgb(1 41 112 / 8%);
+}
+
+/* Common Css Classes */
+
+.main-bg {
+	background-color: var(--main-bg) !important;
+}
+.main-bg-text {
+	color: var(--main-bg) !important;
+}
+.main-light-bg {
+	color: var(--main-light-bg);
+}
+.white-bg {
+	background-color: var(--white-bg);
+}
+.check-bg {
+	background-color: var(--check-bg);
+}
+.main-text {
+	color: var(--main-text);
+}
+.main-text-light {
+	color: var(--main-text-light);
+}
+.text-light1 {
+	color: var(--text-light1);
+}
+.text-decoration-line-through {
+	color: var(--text-disabled);
+}
+.orange-color {
+	color: var(--orange-bg);
+}
+.blue-color {
+	color: var(--blue-bg);
+}
+.green-color {
+	color: var(--green-bg);
+}
+.red-color {
+	color: var(--red-bg);
+}
+.purple-color {
+	color: var(--purple-bg);
+}
+.pink-color {
+	color: var(--pink-bg);
+}
+.orange-bg {
+	background-color: #fde3c4;
+}
+.blue-bg {
+	background-color: #c8edff;
+}
+.green-bg {
+	background-color: #cffddf;
+}
+.red-bg {
+	background-color: #fef7f8;
+}
+.purple-bg {
+	background-color: #f8e4fd;
+}
+.pink-bg {
+	background-color: #feecf7;
+}
+
+/* ==========HOME========== */
+
+nav {
+	min-height: 4rem;
+}
+section {
+	padding-top: 4rem;
+}
+.nav-container {
+	box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+}
+
+.banner {
+	background: url("https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-bg.png")
+		no-repeat center center;
+	background-size: cover;
+	min-height: 90vh;
+	background-attachment: fixed;
+}
+
+.banner-content {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.banner-content button {
+	box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+}
+
+.banner-content button i {
+	transition: 0.3s ease-in-out;
+}
+
+.banner-content button:hover i {
+	transform: translateX(8px);
+}
+
+/* ==========ABOUT========== */
+.value-card {
+	box-shadow: 0px 0 5px rgb(1 41 112 / 8%);
+	transition: 0.4s ease-in-out;
+}
+
+img.value-img,
+.fa-check {
+	transition: 0.4s ease-in-out;
+}
+.value-card:hover img.value-img {
+	scale: 0.9;
+}
+
+.numbers-content i {
+	font-size: 2.5rem;
+}
+.fa-check {
+	border-radius: 3px;
+}
+
+.feature-card:hover .fa-check {
+	background-color: var(--main-bg);
+	color: #fff;
+}
+#dark {
+	border: 5px solid black;
+}
+
+.content-option {
+	position: relative;
+	height: 2rem;
+}
+.content-option::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background-color: #eee;
+}
+span.active {
+	position: relative;
+	height: 2rem;
+}
+span.active::before {
+	content: "";
+	position: absolute;
+	top: 150%;
+	height: 2px;
+	width: 100%;
+	background-color: var(--main-bg);
+}
+
+.content-option-btn {
+	font-size: 0.9rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.neque .neque-text {
+	display: none;
+}
+.neque .neque-text.active {
+	display: block;
+}
+
+.ratione i {
+	font-size: 2.3rem;
+}
+
+/* ==========SERVICES========== */
+.services .service-card {
+	transition: 0.2s ease-in-out;
+	position: relative;
+}
+/* .services .service-card i,
+.services .service-card h3,
+.services .service-card p,
+.services .service-card a {
+	transition: 0.2s ease-in-out;
+} */
+
+.services .service-card,
+.services .service-card a,
+.services .service-card p {
+	transition: 0.2s ease-in-out;
+}
+
+.services .service-card:hover,
+.services .service-card:hover a,
+.services .service-card:hover p {
+	color: #fff;
+	/* background-color: var(--blue-bg); */
+}
+.services .service-card:hover .fa-message {
+	background-color: #fff;
+}
+
+.services .service-card::before {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	border-radius: 0 0 10px 10px;
+}
+
+.services .blue-card::before,
+.services .blue-card:hover {
+	background-color: var(--blue-bg);
+}
+.services .orange-card::before,
+.services .orange-card:hover {
+	background-color: var(--orange-bg);
+}
+.services .green-card::before,
+.services .green-card:hover {
+	background-color: var(--green-bg);
+}
+.services .purple-card::before,
+.services .purple-card:hover {
+	background-color: var(--purple-bg);
+}
+.services .red-card::before,
+.services .red-card:hover {
+	background-color: var(--red-bg);
+}
+.services .pink-card::before,
+.services .pink-card:hover {
+	background-color: var(--pink-bg);
+}
+
+.price-card {
+	transition: 0.4s ease;
+}
+
+.price-card:hover {
+	scale: 1.1;
+}
+/* ==========FAQ========== */
+.accordion-button:focus {
+	box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+	background-color: transparent;
+	color: var(--main-bg);
+}
+
+.portfolio-btns .btn {
+	transition: 0.2s ease;
+}
+.portfolio-btns .btn:hover,
+.portfolio-btns .btn.active {
+	color: var(--main-bg);
+	border: solid 1px var(--main-bg);
+}
+/* ==========PORTFOLIO========== */
+.portfolio-wrapper {
+	background: rgba(255, 255, 255, 0.6);
+	position: relative;
+	z-index: 3;
+	overflow: hidden;
+}
+.portfolio-wrapper img {
+	transition: 0.4s ease-in-out;
+}
+.portfolio-info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	z-index: 999;
+	transition: 0.4s ease-in-out;
+}
+
+.portfolio-info::before {
+	content: "";
+	position: absolute;
+	width: 4rem;
+	height: 4rem;
+	top: 1rem;
+	left: 1rem;
+	border-left: solid 3px rgba(107, 107, 107, 0.5);
+	border-top: solid 3px rgba(107, 107, 107, 0.5);
+}
+.portfolio-info::after {
+	content: "";
+	position: absolute;
+	width: 4rem;
+	height: 4rem;
+	bottom: 1rem;
+	right: 1rem;
+	border-bottom: solid 3px rgba(107, 107, 107, 0.5);
+	border-right: solid 3px rgba(107, 107, 107, 0.5);
+}
+
+.portfolio-wrapper:hover img {
+	scale: 1.1;
+	opacity: 0.3;
+}
+.portfolio-wrapper:hover .portfolio-info {
+	opacity: 1;
+}
+
+/* ==========TESTIMONIALS========== */
+
